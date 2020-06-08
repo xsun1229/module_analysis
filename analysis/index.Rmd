@@ -8,4 +8,14 @@ editor_options:
   chunk_output_type: console
 ---
 
+# Module analysis
+
+- WGCNA
+
+Genes with significant co-expression relationship can form co-expression network. Weighted correlation network analysis (WGCNA) can be used for finding these clusters (modules) of highly correlated genes. We used WGCNA to find modules in GTEx expression data. These modules will be used in subsequent analysis.[For more details](https://xsun1229.github.io/module_analysis/wgcna_module.html)
+
+
+
+
+
 Welcome to my research website.
