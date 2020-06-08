@@ -68,8 +68,12 @@ text(sft$fitIndices[,1], sft$fitIndices[,5], labels=powers, cex=cex1,col="red")
 
 
 <figure class="half">
-    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg" width="80%">
+    <img src="https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg" width="80%">
 </figure>
+
+https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg
+
+https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg
 
 In the plot, the left panel shows the scale-free fit index (y-axis) as a function of the soft-thresholding power (x-axis).  The right panel displays the mean connectivity(degree,y-axis) as a function of the soft-thresholding power (x-axis).
 
@@ -111,6 +115,10 @@ plotDendroAndColors(net$dendrograms[[1]], mergedColors[net$blockGenes[[1]]],
 
 <figure class="half">
     <img src="https://github.com/xsun1229/module_analysis/raw/master/output/cluster.jpeg" width="80%">
+</figure>
+
+<figure class="half">
+    <img src="https://github.com/xsun1229/pathway_analysis/raw/master/output/rs9557207_pval_flash_b.jpeg" width="80%">
 </figure>
 
 This plot shows clustering dendrogram of genes.
