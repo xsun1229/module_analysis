@@ -30,7 +30,7 @@ plot(sampleTree, main = "sample clustering to detect outliers", sub = "", xlab="
 
 
 <figure class="half">
-    <img src="https://github.com/xsun1229/module_analysis/output/outlier.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/outlier.jpeg" width="80%">
 </figure>
 
 There is not obvious outliers, so we used all samples in the following steps.
@@ -68,7 +68,7 @@ text(sft$fitIndices[,1], sft$fitIndices[,5], labels=powers, cex=cex1,col="red")
 
 
 <figure class="half">
-    <img src="https://github.com/xsun1229/module_analysis/output/threshold.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg" width="80%">
 </figure>
 
 In the plot, the left panel shows the scale-free fit index (y-axis) as a function of the soft-thresholding power (x-axis).  The right panel displays the mean connectivity(degree,y-axis) as a function of the soft-thresholding power (x-axis).
@@ -101,10 +101,24 @@ table(net$colors)
 
 We obtained 14 modules from our dataset. They are labeled 1 through 14. The label 0 is reserved for genes outside of all modules.
 
+```{r eval=FALSE, echo=T}
+mergedColors = labels2colors(net$colors)
+# Plot the dendrogram and the module colors underneath
+plotDendroAndColors(net$dendrograms[[1]], mergedColors[net$blockGenes[[1]]],
+                    "Module colors",dendroLabels = FALSE, hang = 0.03,
+                    addGuide = TRUE, guideHang = 0.05)
+```
 
 <figure class="half">
-    <img src="https://github.com/xsun1229/module_analysis/output/heatmap.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/cluster.jpeg" width="80%">
 </figure>
 
-We visualizing the gene network using a heatmap plot. The heatmap depicts the Topological Overlap Matrix(TOM) among all genes in the analysis. Light color represents low overlap and progressively darker red colorrepresents higher overlap. Blocks of darker colors along the diagonal are the modules. The gene dendrogram andmodule assignment are also shown along the left side and the top.
-  
+This plot shows clustering dendrogram of genes.
+
+<figure class="half">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/heatmap.jpeg" width="80%">
+</figure>
+
+We tried to visualize the gene network using a heatmap plot. The heatmap depicts the Topological Overlap Matrix(TOM) among all genes in the analysis. Light color represents low overlap and progressively darker red colorrepresents higher overlap. Blocks of darker colors along the diagonal are the modules. The gene dendrogram andmodule assignment are also shown along the left side and the top.
+
+(There are too many genes in ourdataset, so it's difficult to make the plot clear)
