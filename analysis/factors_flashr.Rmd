@@ -1,0 +1,66 @@
+---
+title: "factors_flashr"
+author: "XSun"
+date: "2020-06-09"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+
+In this part, we used ['flashr'](https://github.com/stephenslab/flashr), to extract factors from gene expression matrix. We also computed the heritability of each factors using [GCTA](https://cnsgenomics.com/software/gcta/#GREML).
+
+## Material and Methods
+
+1. We identified 14 modules in [wgcna_module](https://xsun1229.github.io/module_analysis/wgcna_module.html) part. We can obtain the gene expression data from GTEx dataset for each module and got 14 gene expression matrices.
+
+2. We used workflow showed in ['flashr'](https://github.com/stephenslab/flashr) to extract factors. 
+
+```{r eval=FALSE, echo=T}
+f = flash(Y)    ### Y is the gene expression matrix.
+ldf = flash_get_ldf(f)
+```
+
+3. Then, we used the backfitting algorithm to improve the fit (but it takes longer).
+
+```{r eval=FALSE, echo=T}
+f.b = flash(Y, f_init = f, backfit=TRUE, greedy=FALSE)
+ldf.b = flash_get_ldf(f.b)
+```
+
+4. Computed the heritability of each module.
+
+## Results
+
+### Factors
+
+The table below shows the number of genes and factors in module.
+
+| Module             | 1    | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11 | 12 | 13 | 14 |
+|--------------------|------|-----|-----|-----|-----|-----|-----|-----|-----|-----|----|----|----|----|
+| genes per module   | 1888 | 774 | 431 | 328 | 245 | 226 | 204 | 156 | 114 | 103 | 58 | 36 | 34 | 33 |
+| factors per module | 67   | 53  | 53  | 41  | 29  | 39  | 29  | 31  | 24  | 22  | 19 | 11 | 10 | 8  |
+
+### Heritability
+
+We made histograms for each module to show the distibution of factor heritability.
+
+<figure class="half">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_1.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_2.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_3.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_4.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_5.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_6.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_7.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_8.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_9.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_10.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_11.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_12.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_13.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/H_m_14.jpeg" width="80%">
+</figure>
+
+

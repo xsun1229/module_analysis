@@ -33,6 +33,8 @@ plot(sampleTree, main = "sample clustering to detect outliers", sub = "", xlab="
     <img src="https://github.com/xsun1229/module_analysis/raw/master/output/outlier.jpeg" width="80%">
 </figure>
 
+If the picture is too small, please use this link:  https://github.com/xsun1229/module_analysis/raw/master/output/outlier.jpeg
+
 There is not obvious outliers, so we used all samples in the following steps.
 
 ###  Construction of the gene network and identification of modules
@@ -68,12 +70,9 @@ text(sft$fitIndices[,1], sft$fitIndices[,5], labels=powers, cex=cex1,col="red")
 
 
 <figure class="half">
-    <img src="https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg" width="80%">
+    <img src="https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg" width="80%">
 </figure>
 
-https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg
-
-https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg
 
 In the plot, the left panel shows the scale-free fit index (y-axis) as a function of the soft-thresholding power (x-axis).  The right panel displays the mean connectivity(degree,y-axis) as a function of the soft-thresholding power (x-axis).
 
@@ -117,9 +116,6 @@ plotDendroAndColors(net$dendrograms[[1]], mergedColors[net$blockGenes[[1]]],
     <img src="https://github.com/xsun1229/module_analysis/raw/master/output/cluster.jpeg" width="80%">
 </figure>
 
-<figure class="half">
-    <img src="https://github.com/xsun1229/pathway_analysis/raw/master/output/rs9557207_pval_flash_b.jpeg" width="80%">
-</figure>
 
 This plot shows clustering dendrogram of genes.
 
@@ -130,3 +126,5 @@ This plot shows clustering dendrogram of genes.
 We tried to visualize the gene network using a heatmap plot. The heatmap depicts the Topological Overlap Matrix(TOM) among all genes in the analysis. Light color represents low overlap and progressively darker red colorrepresents higher overlap. Blocks of darker colors along the diagonal are the modules. The gene dendrogram andmodule assignment are also shown along the left side and the top.
 
 (There are too many genes in ourdataset, so it's difficult to make the plot clear)
+
+
