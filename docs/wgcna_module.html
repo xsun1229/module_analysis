@@ -446,7 +446,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2020-06-07
+<strong>Last updated:</strong> 2020-06-09
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -537,16 +537,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomxsun1229moduleanalysistreed8d3cbb5c22fef49438c6414ce7d673d42c1c58etargetblankd8d3cbba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/xsun1229/module_analysis/tree/d8d3cbb5c22fef49438c6414ce7d673d42c1c58e" target="_blank">d8d3cbb</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomxsun1229moduleanalysistreeaac100bf164c6067013a8b7c7f42690d0d8ed0adtargetblankaac100ba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/xsun1229/module_analysis/tree/aac100bf164c6067013a8b7c7f42690d0d8ed0ad" target="_blank">aac100b</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomxsun1229moduleanalysistreed8d3cbb5c22fef49438c6414ce7d673d42c1c58etargetblankd8d3cbba" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomxsun1229moduleanalysistreeaac100bf164c6067013a8b7c7f42690d0d8ed0adtargetblankaac100ba" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/xsun1229/module_analysis/tree/d8d3cbb5c22fef49438c6414ce7d673d42c1c58e" target="_blank">d8d3cbb</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/xsun1229/module_analysis/tree/aac100bf164c6067013a8b7c7f42690d0d8ed0ad" target="_blank">aac100b</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -590,6 +590,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/xsun1229/module_analysis/blob/aac100bf164c6067013a8b7c7f42690d0d8ed0ad/analysis/wgcna_module.Rmd" target="_blank">aac100b</a>
+</td>
+<td>
+XSun
+</td>
+<td>
+2020-06-09
+</td>
+<td>
+wflow_publish(c(“analysis/index.Rmd”, “analysis/wgcna_module.Rmd”,
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/xsun1229/module_analysis/a3e5f5972b129b8f01610a664e37f67734be3cd0/docs/wgcna_module.html" target="_blank">a3e5f59</a>
+</td>
+<td>
+XSun
+</td>
+<td>
+2020-06-07
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -685,6 +719,7 @@ plot(sampleTree, main = &quot;sample clustering to detect outliers&quot;, sub = 
 <figure class="half">
 <img src="https://github.com/xsun1229/module_analysis/raw/master/output/outlier.jpeg" width="80%">
 </figure>
+<p>If the picture is too small, please use this link: <a href="https://github.com/xsun1229/module_analysis/raw/master/output/outlier.jpeg" class="uri">https://github.com/xsun1229/module_analysis/raw/master/output/outlier.jpeg</a></p>
 <p>There is not obvious outliers, so we used all samples in the following steps.</p>
 </div>
 <div id="construction-of-the-gene-network-and-identification-of-modules" class="section level3">
@@ -714,10 +749,8 @@ plot(sft$fitIndices[,1], sft$fitIndices[,5],
      main = paste(&quot;Mean connectivity&quot;))
 text(sft$fitIndices[,1], sft$fitIndices[,5], labels=powers, cex=cex1,col=&quot;red&quot;)</code></pre>
 <figure class="half">
-<img src="https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg" width="80%">
+<img src="https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg" width="80%">
 </figure>
-<p><a href="https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg" class="uri">https://raw.githubusercontent.com/xsun1229/module_analysis/master/output/threshold.jpeg</a></p>
-<p><a href="https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg" class="uri">https://github.com/xsun1229/module_analysis/raw/master/output/threshold.jpeg</a></p>
 <p>In the plot, the left panel shows the scale-free fit index (y-axis) as a function of the soft-thresholding power (x-axis). The right panel displays the mean connectivity(degree,y-axis) as a function of the soft-thresholding power (x-axis).</p>
 <p>We choose the power 22, which is the lowest power for which the scale-free topology fitindex curve flattens out upon reaching a high value (in this case, roughly 0.90).</p>
 </div>
@@ -780,9 +813,6 @@ plotDendroAndColors(net$dendrograms[[1]], mergedColors[net$blockGenes[[1]]],
                     addGuide = TRUE, guideHang = 0.05)</code></pre>
 <figure class="half">
 <img src="https://github.com/xsun1229/module_analysis/raw/master/output/cluster.jpeg" width="80%">
-</figure>
-<figure class="half">
-<img src="https://github.com/xsun1229/pathway_analysis/raw/master/output/rs9557207_pval_flash_b.jpeg" width="80%">
 </figure>
 <p>This plot shows clustering dendrogram of genes.</p>
 <figure class="half">
